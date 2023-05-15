@@ -17,7 +17,8 @@
         "vscode": {
             "extensions": [
                 "mads-hartmann.bash-ide-vscode",
-                "ms-vscode.makefile-tools"
+                "ms-vscode.makefile-tools",
+                "GitHub.vscode-github-actions"
             ]
         }
     },
