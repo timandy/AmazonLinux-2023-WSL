@@ -1,18 +1,17 @@
-# AmazonWSL
-Amazon Linux on WSL (Windows 10 FCU or later)
+# Amazon Linux 2023 WSL
+Amazon Linux 2023 on WSL (Windows 10 FCU or later)
 based on [wsldl](https://github.com/yuk7/wsldl)
 
 ![screenshot](https://raw.githubusercontent.com/yosukes-dev/AmazonWSL/master/img/screenshot.png)
 
-[![CircleCI](https://circleci.com/gh/yosukes-dev/AmazonWSL.svg?style=svg)](https://circleci.com/gh/yosukes-dev/AmazonWSL)
-[![Github All Releases](https://img.shields.io/github/downloads/yosukes-dev/AmazonWSL/total.svg?style=flat-square)](https://github.com/yosukes-dev/AmazonWSL/releases)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-![License](https://img.shields.io/github/license/yosukes-dev/AmazonWSL.svg?style=flat-square)
 
-### [Download](https://github.com/yosukes-dev/AmazonWSL/releases)
+[![Github All Releases](https://img.shields.io/github/downloads/rlove/AmazonLinux-2023-WSL/total.svg?style=flat-square)](https://github.com/rlove/AmazonLinux-2023-WSL/releases)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+### [Download](https://github.com/rlove/AmazonWSL-2023-wsl/releases)
 
 ## An instruction on AWS Developer Tools Blog
-The following link is to an article on the AWS Developer Tools Blog describing development with AmazonWSL.    
+The following link is to an article on the AWS Developer Tools Blog describing development with AmazonWSL v2, and still applies to AmazonLinux-2023-WSL.    
 [Developing on Amazon Linux 2 using Windows - AWS Developer Tools Blog](https://aws.amazon.com/jp/blogs/developer/developing-on-amazon-linux-2-using-windows/)
 
 ## Requirements
@@ -20,25 +19,24 @@ The following link is to an article on the AWS Developer Tools Blog describing d
 * Windows Subsystem for Linux feature is enabled.
 
 ## Install
-#### 1. [Download](https://github.com/yosukes-dev/AmazonWSL/releases) installer zip
+#### 1. [Download](https://github.com/rlove/AmazonWSL-2023-wsl/releases) installer zip
 
 #### 2. Extract all files in zip file to same directory
 
-#### 3.Run Amazon2.exe to Extract rootfs and Register to WSL
+#### 3.Run AL2023.exe to Extract rootfs and Register to WSL
 Exe filename is using to the instance name to register.
 If you rename it you can register with a diffrent name and have multiple installs.
 
 ## Icon settings for Windows Terminal
-![terminal-icon](https://raw.githubusercontent.com/yosukes-dev/AmazonWSL/master/img/terminal-icon.png)
 
 The following is an example of `profiles.json` if you extracted to `C:\`
 ```
 {
-    "guid": "{dc13e3b1-2863-5b9b-9749-3a31bc67a12a}",
+    "guid": "{98c7f3f4-4eb6-4dd0-9568-0de8589151d4}",
     "hidden": false,
-    "name": "Amazon2",
+    "name": "Amazon Linux 2023",
     "source": "Windows.Terminal.Wsl",
-    "icon": "C:\\Amazon2\\assets\\icon.png"
+    "icon": "C:\\Amazon2023\\assets\\icon.png"
 }
 ```
 
@@ -83,19 +81,19 @@ Usage :
 
 #### Just Run exe
 ```cmd
->Amazon2.exe
+>AL2023.exe
 [root@PC-NAME user]#
 ```
 
 #### Run with command line
 ```cmd
->Amazon2.exe run uname -r
+>AL2023.exe run uname -r
 4.4.0-43-Microsoft
 ```
 
 #### Run with command line with path translation
 ```cmd
->Amazon2.exe runp echo C:\Windows\System32\cmd.exe
+>AL2023.exe runp echo C:\Windows\System32\cmd.exe
 /mnt/c/Windows/System32/cmd.exe
 ```
 
@@ -106,21 +104,21 @@ The following is an example of adding a user to the "users" and "wheel" groups a
 _Note: Replace `user` with your chosen user name._
 
 ```cmd
->Amazon2.exe run useradd -m -g users -G wheel -s /bin/bash user
+>AL2023.exe run useradd -m -g users -G wheel -s /bin/bash user
 
->Amazon2.exe config --default-user user
+>AL2023.exe config --default-user user
 
->Amazon2.exe
+>AL2023.exe
 [user@PC-NAME dir]$
 ```
 
 #### Set "Windows Terminal" as default terminal
 ```cmd
->Amazon2.exe config --default-term wt
+>AL2023.exe config --default-term wt
 ```
 
 #### How to uninstall instance
 ```dos
->Amazon2.exe clean
+>AL2023.exe clean
 
 ```
