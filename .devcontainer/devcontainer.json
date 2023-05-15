@@ -4,10 +4,6 @@
         "ghcr.io/devcontainers/features/docker-in-docker:2": {},
         "ghcr.io/devcontainers/features/github-cli:1": {},
         "ghcr.io/devcontainers/features/aws-cli:1": {},
-        "ghcr.io/devcontainers/features/git:1": {
-            "version": "latest",
-            "ppa": "false"
-        },
         "ghcr.io/devcontainers/features/common-utils:2": {
             "installOhMyZsh": "false",
             "installZsh": "false",
