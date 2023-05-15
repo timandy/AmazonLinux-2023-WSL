@@ -16,10 +16,11 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "mads-hartmann.bash-ide-vscode",
-                "ms-vscode.makefile-tools",
-                "GitHub.vscode-github-actions"
-            ]
+				"mads-hartmann.bash-ide-vscode",
+				"ms-vscode.makefile-tools",
+				"GitHub.vscode-github-actions",
+				"EditorConfig.EditorConfig"
+			]
         }
     },
     "remoteUser": "vscode"
