@@ -38,7 +38,8 @@ rootfs: base.tar
 
 base.tar:
 	@echo -e '\e[1;31mExporting base.tar using docker...\e[m'
-	docker run --name amazonwsl public.ecr.aws/amazonlinux/amazonlinux:2023 /bin/bash -c "dnf update -y; dnf install -y net-tools util-linux-ng; dnf clean all;  pwconv; grpconv; chmod 0744 /etc/shadow; chmod 0744 /etc/gshadow;"
+	docker build -t amazonwsl:latest ./docker
+	docker run --name amazonwsl amazonwsl:latest
 	docker export --output=base.tar amazonwsl
 	docker rm -f amazonwsl
 
