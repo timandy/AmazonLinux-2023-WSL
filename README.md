@@ -8,7 +8,7 @@ based on [wsldl](https://github.com/yuk7/wsldl)
 [![Github All Releases](https://img.shields.io/github/downloads/timandy/AmazonLinux-2023-WSL/total.svg?style=flat-square)](https://github.com/timandy/AmazonLinux-2023-WSL/releases)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-### [Download](https://github.com/timandy/AmazonWSL-2023-wsl/releases)
+### [Download](https://github.com/timandy/AmazonLinux-2023-WSL/releases)
 
 ## An instruction on AWS Developer Tools Blog
 
@@ -22,7 +22,7 @@ The following link is to an article on the AWS Developer Tools Blog describing d
 
 ## Install
 
-#### 1. [Download](https://github.com/timandy/AmazonWSL-2023-wsl/releases) installer zip
+#### 1. [Download](https://github.com/timandy/AmazonLinux-2023-WSL/releases) installer zip
 
 #### 2. Extract all files in zip file to same directory
 
