@@ -3,7 +3,7 @@ LNCR_EXE=AL2023.exe
 
 DLR=curl
 DLR_FLAGS=-L
-LNCR_URL=https://github.com/yuk7/wsldl/releases/download/22020900/wsldl.exe
+LNCR_URL=https://github.com/yuk7/wsldl/releases/download/25030400/wsldl.exe
 
 all: $(OUT_ZIP)
 
