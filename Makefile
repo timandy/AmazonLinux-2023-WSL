@@ -51,4 +51,3 @@ clean:
 	-sudo rm -r rootfs
 	-rm base.tar
 	-docker rmi public.ecr.aws/amazonlinux/amazonlinux:2023
-

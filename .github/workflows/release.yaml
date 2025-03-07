@@ -1,7 +1,7 @@
 on:
   push:
     tags:
-    - '*'
+      - '*'
 jobs:
   build:
     runs-on: ubuntu-20.04
@@ -17,6 +17,3 @@ jobs:
           gh release upload ${{ github.ref_name }} AL2023.zip
         env:
           GH_TOKEN: ${{ github.token }}
-
-
-

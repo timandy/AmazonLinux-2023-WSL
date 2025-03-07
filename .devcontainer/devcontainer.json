@@ -1,27 +1,27 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
-    "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
-        "ghcr.io/devcontainers/features/github-cli:1": {},
-        "ghcr.io/devcontainers/features/aws-cli:1": {},
-        "ghcr.io/devcontainers/features/common-utils:2": {
-            "installOhMyZsh": "false",
-            "installZsh": "false",
-            "username": "vscode",
-            "userUid": "1000",
-            "userGid": "1000",
-            "upgradePackages": "true"
-        }
-    },
-    "customizations": {
-        "vscode": {
-            "extensions": [
-				"mads-hartmann.bash-ide-vscode",
-				"ms-vscode.makefile-tools",
-				"GitHub.vscode-github-actions",
-				"EditorConfig.EditorConfig"
-			]
-        }
-    },
-    "remoteUser": "vscode"
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/aws-cli:1": {},
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installOhMyZsh": "false",
+      "installZsh": "false",
+      "username": "vscode",
+      "userUid": "1000",
+      "userGid": "1000",
+      "upgradePackages": "true"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "mads-hartmann.bash-ide-vscode",
+        "ms-vscode.makefile-tools",
+        "GitHub.vscode-github-actions",
+        "EditorConfig.EditorConfig"
+      ]
+    }
+  },
+  "remoteUser": "vscode"
 }
